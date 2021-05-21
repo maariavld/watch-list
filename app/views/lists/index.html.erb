@@ -1,0 +1,17 @@
+
+<div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+  <%= link_to 'Create a new list', new_list_path(@list), class: "button-red create-tag" %>
+  <h1 class = "d-flex justify-content-center py-5">List of movies</h1>
+</div>
+<div class="row my-5">
+  <% @lists.each do |list| %>
+  <div class="col-12 col-sm-4 mb-3 d-flex justify-content-around">
+    <%= link_to list_path(list), class:'text-decoration-none' do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(<%= list.image_url %>)">
+      <h1> <%= list.name%></h1>
+    </div>
+   <% end %>
+ </div>
+ <% end %>
+</div>
+

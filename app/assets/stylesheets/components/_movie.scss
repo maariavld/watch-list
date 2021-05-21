@@ -1,0 +1,36 @@
+.movie-tag {
+  color: white;
+  padding: 6px 16px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 7px rgba(29, 53, 87, 0.3);
+  background: rgb(157, 2, 8);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.movie-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.star-yellow{
+  color: rgb(255, 186, 8);
+}
+.quote{
+  color: rgb(157, 2, 8);
+}
+.create-tag{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.category-name{
+  color:white;
+  &:hover{
+  color:white;
+  text-decoration:none;
+  }
+}

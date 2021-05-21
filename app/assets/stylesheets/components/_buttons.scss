@@ -1,0 +1,11 @@
+.button-red{
+  color: white;
+  padding: 7px 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 7px rgba(29, 53, 87, 0.3);
+  background: rgb(157, 2, 8);
+  &:hover{
+    text-decoration:none;
+    color: white;
+  }
+}
