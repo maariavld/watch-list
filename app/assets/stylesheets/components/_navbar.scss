@@ -10,3 +10,16 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+.navbar{
+  height: 3rem;
+  width:100%;
+  background-color: rgb(247, 237, 226);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li{
+   display: inline;
+   list-style: none;
+  }
+}
