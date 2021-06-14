@@ -1,3 +1,13 @@
+<div class="navbar d-flex justify-content-end">
+  <ul class="">
+    <li><button type="button" class="btn btn-flat" data-toggle="modal" data-target="#add_movie_modal">
+      add a movie
+    </button></li>
+    <li><%= link_to 'Return to movie lists', root_path, class: "btn btn-flat"%></li>
+  <!-- <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li> -->
+  </ul>
+</div>
 <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.image_url %>">
     <h1 class="d-flex justify-content-center py-5"><%= @list.name %></h1>
 </div>
@@ -5,12 +15,6 @@
 <div class="container mb-5">
   <div class="d-flex justify-content-between my-3">
     <span class="mb-2 d-block"><small><em class="text-muted"><%= "You haven't saved any movies yet!" if @list.movies.empty? %></em></small></span>
-    <div>
-      <button type="button" class="button-red" data-toggle="modal" data-target="#add_movie_modal">
-        add a movie
-      </button>
-      <%= link_to 'Return to movie lists', lists_path, class: "button-red"%>
-    </div>
   </div>
   <div class="row my-2">
     <% @list.movies.each do |movie| %>
@@ -25,7 +29,10 @@
               <div>
                 <i class="fas fa-quote-left mr-2 quote"></i><small><%= bookmark.comment %></small>
               </div>
-              <small class="text-right"><%= link_to 'delete', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %></small>
+              <small class="text-right"><%= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-muted' do%>
+                 <i class="far fa-trash-alt"></i>
+                 <% end %>
+              </small>
             </div>
           </div>
         </div>
@@ -35,3 +42,4 @@
 </div>
 
 <%= render 'bookmarks/new', list: @list %>
+
