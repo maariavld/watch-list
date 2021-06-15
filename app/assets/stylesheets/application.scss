@@ -11,4 +11,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "lists";
+
+body, html {
+
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+
+}
