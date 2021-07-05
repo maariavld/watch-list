@@ -1,27 +1,27 @@
-.button-red{
-  color: white;
-  padding: 7px 15px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 7px rgba(29, 53, 87, 0.3);
-  background: rgb(157, 2, 8);
-  &:hover{
-    text-decoration:none;
+.button-red {
     color: white;
-  }
+    padding: 7px 15px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px rgba(29, 53, 87, 0.3);
+    background: rgb(157, 2, 8);
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
 }
-.btn-red-landing{
-  text-decoration:none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 7px;
-  box-shadow: 2px 2px 7px rgba(250, 250, 250, 0.3);
-  border: 2px solid rgb(157, 2, 8);
-  background: rgba(6, 55, 96, 0.2);
-  font-weight: bolder;
-  font-size:24px;
-  &:hover{
-    text-decoration:none;
-    color: rgb(249, 247, 247);
-    border: 2px solid rgb(124, 2, 6);
-  }
+
+.btn-red-landing {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px rgba(250, 250, 250, 0.3);
+    border: 2px solid rgb(157, 2, 8);
+    background: rgb(157, 2, 8);
+    font-size: 1.5vw;
+    &:hover {
+        text-decoration: none;
+        color: rgb(249, 247, 247);
+        border: 2px solid rgb(124, 2, 6);
+    }
 }
