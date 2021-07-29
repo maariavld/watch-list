@@ -1,0 +1,17 @@
+<section class="intro">
+  <div class="inner">
+      <div class="content">
+        <section class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+          <h1 class="title"> WATCHILL </h1>
+          <p class="p-1 mb-5 d-flex justify-content-center title">Find your favorite films, start a conversation, build a community!</p>
+        </section>
+        <section class="os-animation d-flex justify-content-evenly" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+          <%if current_user.nil? %>
+            <%= link_to 'SIGN IN', user_session_path, class:'btn-red-landing' %>
+            <%= link_to 'SIGN UP', new_user_registration_path, class:'btn-red-landing' %>
+          <%end%>
+        </section>
+      </div>
+  </div>
+</section>
+

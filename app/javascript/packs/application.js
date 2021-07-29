@@ -16,3 +16,16 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
+import { initAnimation } from "./animation";
+const jQuery = require('jquery')
+
+// include jQuery in global and window scope (so you can access it globally)
+// in your web browser, when you type $('.div'), it is actually refering to global.$('.div')
+global.$ = global.jQuery = jQuery;
+window.jQuery = window.$ = require("jquery");
+import "./jquery.waypoints.min"
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your functions here, e.g:
+ initAnimation();
+});
