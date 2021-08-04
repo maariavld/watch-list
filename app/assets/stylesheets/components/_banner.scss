@@ -19,7 +19,7 @@
 .intro {
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 10, 17);
+    background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,15 +33,25 @@
     transform: translate(-50%, -50%);
 }
 
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .content h1 {
-    color: #cbd2d6;
+    color: #00060a;
     font-size: 20vh;
     text-shadow: 3px 3px 7px rgba(42, 43, 90, 0.7);
 }
 
 .content p {
-    color: #cbd2d6;
+    color: #00060a;
     font-size: 5vh;
     font-weight: lighter;
     text-shadow: 3px 3px 7px rgba(42, 43, 90, 0.7);
+}
+
+.landing-page-img {
+    width: 30vw;
+    height: 80vh;
 }
