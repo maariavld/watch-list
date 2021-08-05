@@ -1,0 +1,30 @@
+.form-pic-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+}
+
+.listing-card {
+    padding: 24px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.list-pic img {
+    width: 40vw;
+    height: 80vh;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+
+.form-control {
+    border-radius: 7px;
+    border: 1px solid rgba(#000000, 0.15);
+    background-color: #f9f9fa;
+}
+
+@media (max-width: 950px) {
+    .list-pic {
+        display: none;
+    }
+}
